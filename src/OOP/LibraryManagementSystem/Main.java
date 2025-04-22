@@ -1,6 +1,5 @@
 package OOP.LibraryManagementSystem;
 
-import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
@@ -71,10 +70,12 @@ public class Main {
         String bookToReturn = sc.nextLine();
         System.out.print("Enter member name: ");
         String memberReturningBook = sc.nextLine();
-        LocalDate dateReturned = null;
-        System.out.println("Date returned for the book is: " + dateReturned);
         System.out.print("Enter transaction id of previous borrow: ");
         int id = sc.nextInt();
         librarian.returnBook(memberReturningBook, bookToReturn, null, id);
+
+        System.out.print("Enter member name to view their borrowed books: ");
+        String memberToView = sc.nextLine();
+        librarian.viewMemberBorrowedBooks(memberToView);
     }
 }

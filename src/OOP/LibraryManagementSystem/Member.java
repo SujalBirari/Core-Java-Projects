@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Member {
     private String name;
     private String email;
-    private int userId;
+    private final int userId;
     ArrayList<Book> borrowedBooks;
 
     public Member(String name, String email, int userId) {

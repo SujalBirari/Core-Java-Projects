@@ -3,7 +3,7 @@ package OOP.LibraryManagementSystem;
 public class Book {
     private String bookName;
     private String bookAuthor;
-    private int bookId;
+    private final int bookId;
     private int quantity;
 
     public Book(String bookName, String bookAuthor, int bookId, int quantity) {

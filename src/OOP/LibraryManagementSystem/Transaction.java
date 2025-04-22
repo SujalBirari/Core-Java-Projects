@@ -3,11 +3,11 @@ package OOP.LibraryManagementSystem;
 import java.time.LocalDate;
 
 public class Transaction {
-    private Member member;
-    private Book book;
-    private LocalDate dateBorrowed;
-    private LocalDate dateToReturn;
-    private int transactionId;
+    private final Member member;
+    private final Book book;
+    private final LocalDate dateBorrowed;
+    private final LocalDate dateToReturn;
+    private final int transactionId;
 
     public Transaction(Member member, Book book, LocalDate dateToReturn, int transactionId) {
         this.member = member;
@@ -37,8 +37,8 @@ public class Transaction {
 }
 
 class ReturnTransaction extends Transaction {
-    private LocalDate dateReturned;
-    private int lateCharges;
+    private final LocalDate dateReturned;
+    private final int lateCharges;
 
     public ReturnTransaction(Member member, Book book, LocalDate dateToReturn, LocalDate dateReturned, int lateCharges, int transactionId) {
         super(member, book, dateToReturn, transactionId);

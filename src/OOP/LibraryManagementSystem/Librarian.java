@@ -18,6 +18,8 @@ public class Librarian {
     public Librarian() {
         booksInLibrary = new ArrayList<>();
         libraryMembers = new ArrayList<>();
+        borrowRecords = new ArrayList<>();
+        returnRecords = new ArrayList<>();
     }
 
     public void addBook(Book book) {
